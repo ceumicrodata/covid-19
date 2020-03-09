@@ -7,3 +7,6 @@
 
 ## Natianal Accounts data (United Nations Statistics Division)
 *Citation*: ..., URL: "https://unstats.un.org/unsd/snaama/Basic", DOI: 01.03.2020.
+
+## Exchange rates data (Worldbank WDI):
+*Citation*:Official exchange rates, URL:"http://api.worldbank.org/v2/en/indicator/PA.NUS.FCRF?downloadformat=csv", DOI: 08.03.2020
