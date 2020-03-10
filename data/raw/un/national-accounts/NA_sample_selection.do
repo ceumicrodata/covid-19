@@ -19,12 +19,13 @@ SWE TUR TWN USA VNM
 foreach country of local sample{
 preserve
 keep if country=="`country'"
-save sample_selection_dta/`country'.dta, replace
+save temp/`country'.dta, replace
 restore
 }
 clear
 foreach country of local sample{
-append using sample_selection_dta/`country'.dta
+append using temp/`country'.dta
+rm temp/`country'.dta
 }
 
 
