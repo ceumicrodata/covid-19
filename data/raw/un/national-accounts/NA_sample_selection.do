@@ -24,9 +24,14 @@ restore
 }
 clear
 foreach country of local sample{
-append using /sample_selection_dta/`country'.dta
+append using sample_selection_dta/`country'.dta
 }
 
-*interpolate 2018 data
+
+*interpolate missing output data from value_added and vice-versa
+tempvar ratio 
+egen `ratio' = mean(value_added / gross_output), by(subitem year)
+replace value_added = `ratio' * gross_output if value_added==. & gross_output!=.
+replace gross_output = value_added / `ratio' if gross_output==. & value_added!=.
 
 export delimited using "../../../analysis/UNNA_sample.csv", replace
