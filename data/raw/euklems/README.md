@@ -1,0 +1,2 @@
+#EUKLEMS statistical database:
+*citation*: Bart van Ark and Kirsten Jäger (2017), Recent Trends in Europe's Output and Productivity Growth Performance at the Sector Level, 2002-2015, International Productivity Monitor, Number 33, Fall 2017., URL: https://euklems.eu/download/?doing_wp_cron=1583427073.9629459381103515625000, DOI: 09.03.2020
